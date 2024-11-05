@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 5708788}
   - component: {fileID: 5708787}
   - component: {fileID: 5708786}
+  - component: {fileID: 5708789}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -168,7 +169,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -228,6 +229,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5708784}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5708789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f89a0f4b927254ca3e2193efa27a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GameOver
 --- !u!4 &24836494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1262371337044839893, guid: 05903a7ed4e009c49a49034f3f0b7d34, type: 3}
@@ -2393,6 +2407,7 @@ GameObject:
   - component: {fileID: 815046095}
   - component: {fileID: 815046094}
   - component: {fileID: 815046093}
+  - component: {fileID: 815046096}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -2430,7 +2445,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2488,6 +2503,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815046091}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &815046096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815046091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f89a0f4b927254ca3e2193efa27a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GameOver
 --- !u!4 &825646859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 565069656792052866, guid: d4713b4223ab2204697da99d444d3094, type: 3}
@@ -3712,6 +3740,7 @@ GameObject:
   - component: {fileID: 1060466097}
   - component: {fileID: 1060466096}
   - component: {fileID: 1060466095}
+  - component: {fileID: 1060466098}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -3749,7 +3778,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3809,6 +3838,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060466093}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1060466098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060466093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f89a0f4b927254ca3e2193efa27a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GameOver
 --- !u!1001 &1078360502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5617,6 +5659,7 @@ GameObject:
   - component: {fileID: 1943111360}
   - component: {fileID: 1943111359}
   - component: {fileID: 1943111358}
+  - component: {fileID: 1943111364}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5761,6 +5804,33 @@ Transform:
   - {fileID: 501320564}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1943111364
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943111357}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1947129316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,6 +5843,7 @@ GameObject:
   - component: {fileID: 1947129320}
   - component: {fileID: 1947129319}
   - component: {fileID: 1947129318}
+  - component: {fileID: 1947129321}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -5810,7 +5881,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5870,6 +5941,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947129316}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1947129321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947129316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f89a0f4b927254ca3e2193efa27a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GameOver
 --- !u!4 &1969076833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 565069656792052866, guid: d4713b4223ab2204697da99d444d3094, type: 3}
