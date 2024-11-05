@@ -6544,6 +6544,10 @@ PrefabInstance:
       propertyPath: sceneNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3633046593769388580, guid: 1fbae40704d68e24d90e7391753ccb33, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ebb4e7144d5e41c439e810109409e4cf, type: 2}
     - target: {fileID: 4239083986638860486, guid: 1fbae40704d68e24d90e7391753ccb33, type: 3}
       propertyPath: m_Name
       value: Exit

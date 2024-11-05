@@ -2666,7 +2666,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'BACKGROUND - SUPER BRUTAL ASSETS
 
-    MUSIC - CHILLED FOX
+    MUSIC - CRISTIAN SMITH
 
     WEEPING
     ANGEL AI - OMOGONIX
@@ -3815,11 +3815,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588210569}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ff6407e38dc0bc747a27787b5d2f81f7, type: 3}
-  m_Resource: {fileID: 8300000, guid: ff6407e38dc0bc747a27787b5d2f81f7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 83c091a8448e1a14b96b2b529497fae8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 83c091a8448e1a14b96b2b529497fae8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3932,7 +3932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1765e5757d6f31479e3fac7199fbbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundSlider: {fileID: 0}
+  soundSlider: {fileID: 925034450}
 --- !u!1 &1668510215
 GameObject:
   m_ObjectHideFlags: 0
