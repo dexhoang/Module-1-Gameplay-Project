@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 //code for player detection ai given by Omogonix - https://youtu.be/_e57zSZSOS8?si=jHGpMCsrJpD5911Z 
@@ -14,7 +15,8 @@ public class WeepingAngelAI : MonoBehaviour
     public float aiSpeed;
     public float dangerDistance = 10f;
     public Text dangerMessage;
-    private bool isDisplayingMessage = false;
+    private Coroutine messageCoroutine;
+    public string sceneName;
 
     private void Update()
     {
@@ -35,19 +37,35 @@ public class WeepingAngelAI : MonoBehaviour
         if (distanceToPlayer <= dangerDistance)
         {
             dangerMessage.gameObject.SetActive(true);
+
+            if (messageCoroutine != null)
+            {
+                StopCoroutine(messageCoroutine);
+                messageCoroutine = null;
+            }
         }
         else
         {
-            dangerMessage.gameObject.SetActive(false);
+            if (dangerMessage.gameObject.activeSelf && messageCoroutine == null)
+            {
+                messageCoroutine = StartCoroutine(HideMessage());
+            }
         }
     }
 
-    private IEnumerator DisplayDanger()
+    private IEnumerator HideMessage()
     {
-        isDisplayingMessage = true;
-        dangerMessage.gameObject.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2f);
         dangerMessage.gameObject.SetActive(false);
-        isDisplayingMessage = false;
+        messageCoroutine = null;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("hello");
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
